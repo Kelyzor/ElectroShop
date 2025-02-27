@@ -51,7 +51,7 @@ header a {
   transition: color 0.1s;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   header a:hover {
       color: var(--accent-color);
   }
@@ -61,7 +61,7 @@ header a:active {
   color: var(--active-button-color);
 }
 
-@media (hover: none) {
+@media (pointer: coarse) {
   header a:hover {
       color: var(--text-color);
   }
@@ -93,7 +93,7 @@ nav li {
   transition: background-color 0.1s;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .login:hover {
       background-color: var(--hover-button-color);
   }
@@ -103,7 +103,7 @@ nav li {
   background-color: var(--active-button-color);
 }
 
-@media (hover: none) {
+@media (pointer: coarse) {
   .login:hover {
       background-color: var(--accent-color);
   }
@@ -152,7 +152,7 @@ main h2 {
   transition: transform 0.2s, background-color 0.1s;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .buy-button:hover {
       background-color: var(--hover-button-color);
       transform: scale(1.1);
@@ -164,7 +164,7 @@ main h2 {
   transform: scale(0.95);
 }
 
-@media (hover: none) {
+@media (pointer: coarse) {
   .buy-button:hover {
       background-color: var(--accent-color);
       transform: none;
