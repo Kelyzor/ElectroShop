@@ -3,7 +3,8 @@
   --text-color: white;
   --text-color-dark: #222;
   --accent-color: orange;
-  --hover-button-background-color: rgb(155, 100, 0);
+  --hover-button-color: rgb(155, 100, 0);
+  --active-button-color: rgb(135, 80, 0);
 }
 
 html {
@@ -47,10 +48,17 @@ header a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 1.2rem;
+  transition: color 0.1s;
 }
 
-header a:hover {
-  color: var(--accent-color);
+@media (hover: hover) {
+  header a:hover {
+      color: var(--accent-color);
+  }
+}
+
+header a:active {
+  color: var(--active-button-color);
 }
 
 nav ul {
@@ -76,10 +84,17 @@ nav li {
   border-radius: 30px;
   color: var(--text-color-dark);
   background-color: var(--accent-color);
+  transition: background-color 0.1s;
 }
 
-.login:hover {
-  background-color: var(--hover-button-background-color);
+@media (hover: hover) {
+  .login:hover {
+      background-color: var(--hover-button-color);
+  }
+}
+
+.login:active {
+  background-color: var(--active-button-color);
 }
 
 /* MAIN */
@@ -119,14 +134,22 @@ main h2 {
 .buy-button {
   color: var(--text-color-dark);
   background-color: var(--accent-color);
+  border: none;
   border-radius: 10px;
   font-size: 1rem;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.1s;
 }
 
-.buy-button:hover {
-  background-color: var(--hover-button-background-color);
-  transform: scale(1.1);
+@media (hover: hover) {
+  .buy-button:hover {
+      background-color: var(--hover-button-color);
+      transform: scale(1.1);
+  }
+}
+
+.buy-button:active {
+  background-color: var(--active-button-color);
+  transform: scale(0.95);
 }
 
 /* FOOTER */
@@ -152,8 +175,6 @@ footer {
   padding-bottom: 20px;
   margin: 0;
 }
-
-/* MEDIA */
 
 @media (max-width: 600px) {
 
