@@ -58,7 +58,7 @@ header a {
 }
 
 header a:active {
-  color: var(--active-button-color);
+  color: var(--active-button-color) !important;
 }
 
 @media (pointer: coarse) {
@@ -100,7 +100,7 @@ nav li {
 }
 
 .login:active {
-  background-color: var(--active-button-color);
+  background-color: var(--active-button-color) !important;
 }
 
 @media (pointer: coarse) {
@@ -160,7 +160,7 @@ main h2 {
 }
 
 .buy-button:active {
-  background-color: var(--active-button-color);
+  background-color: var(--active-button-color) !important;
   transform: scale(0.95);
 }
 
