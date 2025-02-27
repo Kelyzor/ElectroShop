@@ -61,6 +61,12 @@ header a:active {
   color: var(--active-button-color);
 }
 
+@media (hover: none) {
+  header a:hover {
+      color: var(--text-color);
+  }
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -95,6 +101,12 @@ nav li {
 
 .login:active {
   background-color: var(--active-button-color);
+}
+
+@media (hover: none) {
+  .login:hover {
+      background-color: var(--accent-color);
+  }
 }
 
 /* MAIN */
@@ -150,6 +162,13 @@ main h2 {
 .buy-button:active {
   background-color: var(--active-button-color);
   transform: scale(0.95);
+}
+
+@media (hover: none) {
+  .buy-button:hover {
+      background-color: var(--accent-color);
+      transform: none;
+  }
 }
 
 /* FOOTER */
