@@ -48,7 +48,7 @@ header a {
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.1s;
-    touch-action: manipulation; /* Для iOS */
+    touch-action: manipulation; /* Для мобильных */
 }
 @media (hover: hover) and (pointer: fine) {
     header a:hover {
@@ -88,7 +88,6 @@ nav li {
     color: var(--text-color-dark);
     background-color: var(--accent-color);
     transition: background-color 0.1s;
-    touch-action: manipulation; /* Для iOS */
 }
 @media (hover: hover) and (pointer: fine) {
     .login:hover {
@@ -97,7 +96,6 @@ nav li {
 }
 .login:active {
     background-color: var(--active-button-color) !important;
-    transition: none; /* Мгновенно на iOS */
 }
 @media (pointer: coarse) {
     .login:hover {
@@ -145,7 +143,6 @@ main h2 {
     border-radius: 10px;
     font-size: 1rem;
     transition: transform 0.2s, background-color 0.1s;
-    touch-action: manipulation; /* Для iOS */
 }
 @media (hover: hover) and (pointer: fine) {
     .buy-button:hover {
@@ -155,8 +152,7 @@ main h2 {
 }
 .buy-button:active {
     background-color: var(--active-button-color) !important;
-    transform: scale(0.95) !important;
-    transition: none; /* Мгновенно на iOS */
+    transform: scale(0.95);
 }
 @media (pointer: coarse) {
     .buy-button:hover {
